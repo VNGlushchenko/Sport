@@ -1,0 +1,60 @@
+body {
+    min-width: 320px;
+}
+:target:before {
+    display: block;
+    content: " ";
+    margin-top: -70px;
+    height: 70px;
+    visibility: hidden;
+}
+div#validation-error-container {
+    padding: 4px;
+    margin-left: 15px;
+    background-color: #E6E6D9;
+}
+div#datepicker-container {
+    margin-left: 0;
+}
+div.input-daterange {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 0;
+}
+div#chart-container {
+    margin-top: 0;
+    padding-top: 0;
+}
+@media screen and (min-width: 100px) and (max-width: 991px) {
+    div#info {
+        margin-top: 20px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    div#info {
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 320px) {
+    button.chart-period {
+        padding: 5px !important;
+    }
+    div.input-daterange {
+        padding-right: 5px !important;
+        padding-left: 5px !important;
+    }
+}
+@media only screen and (width: 240px) {
+    div#sandwich-button {
+        padding-left: 55px !important;
+    }
+    div#small-device-nav a {
+        padding-top: 15px !important;
+    }
+}
+ul.nav-pilles {
+    list-style-type: none;
+}
+div#main-image {
+    padding-top: 30px;
+}
