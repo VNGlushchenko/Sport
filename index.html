@@ -1,154 +1,182 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.css" integrity="sha256-LPN+eTpTPBqagrVriv55Ec3nMrGY4CdujtnzMBrAwMA=" crossorigin="anonymous" />
-      <!--<link rel="stylesheet" type="application/octet-stream" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.min.css.map">-->
-      <link rel="stylesheet" href="css/style.css">
-      <script src="https://use.fontawesome.com/f69d833920.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Sport</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.css"
+        integrity="sha256-LPN+eTpTPBqagrVriv55Ec3nMrGY4CdujtnzMBrAwMA=" crossorigin="anonymous" />
+    <!--<link rel="stylesheet" type="application/octet-stream" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.min.css.map">-->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/f69d833920.js"></script>
 </head>
+
 <body>
-<header hidden>
-<!-- it is the menu for smartphones-->
-<!-- it is the navbar for smartphones-->
-<div class="container-fluid visible-xs">
-    <div class="row">
-        <div class="col-xs-12">
-            <nav class="navbar navbar-default navbar-fixed-top">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="col-xs-2 col-xs-offset-1" id="sandwich-button">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <header hidden>
+        <!-- it is the menu for smartphones-->
+        <!-- it is the navbar for smartphones-->
+        <div class="container-fluid visible-xs">
+            <div class="row">
+                <div class="col-xs-12">
+                    <nav class="navbar navbar-default navbar-fixed-top">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="col-xs-2 col-xs-offset-1" id="sandwich-button">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                                        aria-controls="navbar">
                                 <span class="sr-only">Toggle navigation</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 </button>
-                            </div>
-                            <div class="btn-group btn-group-md col-xs-7" role="group" id="small-device-nav">
-                                <a href="#Kate" id="kate" class="btn btn-default navbar-brand user-name">Катя</a>
-                                <a href="#Vova" id="vova" class="btn btn-default navbar-brand user-name">Вова</a>
+                                </div>
+                                <div class="btn-group btn-group-md col-xs-7" role="group" id="small-device-nav">
+                                    <a href="#Kate" id="kate" class="btn btn-default navbar-brand user-name">Катя</a>
+                                    <a href="#Vova" id="vova" class="btn btn-default navbar-brand user-name">Вова</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div id="navbar" class="navbar-collapse collapse col-xs-11 col-xs-offset-1 nav-menu-list"></div>
-                    </div>
-            </nav>
-        </div>
-    </div>
-</div>
-<!-- it is the navbar for not smartphones-->
-<div class="container-fluid">
-    <div class="row">
-        <nav class="navbar navbar-default navbar-fixed-top hidden-xs visible-sm visible-md visible-lg">
-            <div class="btn-group btn-group-lg col-sm-4 col-sm-offset-5 col-md-offset-5 col-lg-offset-5" role="group">
-                <a href="#Kate" id="Kate" class="btn btn-default btn-md user-name">Катя</a>
-                <a href="#Vova" id="Vova" class="btn btn-default btn-md user-name">Вова</a>
-            </div>
-        </nav>
-    </div>
-</div>
-</header>
-<main hidden>
-  <div class="container-fluid">
-  <div class="row">
-        <!-- it is the sidebar for not smartphones-->
-        <div class="col-sm-3 col-md-2 sidebar hidden-xs nav-menu-list" id="no-smartphone-menu-list">
-        </div>
-        <!-- panel-->
-        <div class="col-xs-12 col-sm-9 col-md-10 main">
-            <div class="panel panel-info">
-                <div class="panel-heading">
-                    <h3 class="panel-title text-center lead" id="panel-title">Достижения по показателю</h3>
-                </div>
-                <div class="panel-body">
-                    <div class="row">
-                        <!-- progressView-->
-                        <div class="col-xs-12 col-sm-12 col-md-5"  id="progress"></div>
-                        <!-- errorView, datepicker and chartView-->
-                        <div class="col-xs-12 col-sm-12 col-md-7" id="info">
                         <div class="row">
-                                <!-- validationErrorView-->
-                                <div class="alert col-xs-7 col-sm-4 col-sm-offset-1 col-md-5 col-md-offset-4 col-lg-4 text-center" id="validation-error-container" role="alert">Выберите даты:</div>
-                                <!--end of id="validation-error-container"-->
-                                    <div class="col-xs-12 col-sm-7 col-md-9 col-md-offset-2 col-lg-7 col-lg-offset-1" id="datepicker-container">
-                                        <form class="form-horizontal">
-                                            <div class="form-group">
-                                                <div>
-                                                    <div id="sandbox-container">
-                                                        <div class="input-daterange input-group" id="datepicker">
-                                                            <span class="input-group-addon"><i class="fa fa-calendar fa-lg" aria-hidden="true"></i></span>
-                                                            <input type="text" class="input-sm form-control" name="start">
-                                                            <span class="input-group-addon">по</span>
-                                                            <input type="text" class="input-sm form-control" name="end">
-                                                            <span class="input-group-btn">
+                            <div id="navbar" class="navbar-collapse collapse col-xs-11 col-xs-offset-1 nav-menu-list"></div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- it is the navbar for not smartphones-->
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-default navbar-fixed-top hidden-xs visible-sm visible-md visible-lg">
+                    <div class="btn-group btn-group-lg col-sm-4 col-sm-offset-5 col-md-offset-5 col-lg-offset-5" role="group">
+                        <a href="#Kate" id="Kate" class="btn btn-default btn-md user-name">Катя</a>
+                        <a href="#Vova" id="Vova" class="btn btn-default btn-md user-name">Вова</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main hidden>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- it is the sidebar for not smartphones-->
+                <div class="col-sm-3 col-md-2 sidebar hidden-xs nav-menu-list" id="no-smartphone-menu-list">
+                </div>
+                <!-- panel-->
+                <div class="col-xs-12 col-sm-9 col-md-10 main">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title text-center lead" id="panel-title">Достижения по показателю</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <!-- progressView-->
+                                <div class="col-xs-12 col-sm-12 col-md-5" id="progress"></div>
+                                <!-- errorView, datepicker and chartView-->
+                                <div class="col-xs-12 col-sm-12 col-md-7" id="info">
+                                    <div class="row">
+                                        <!-- validationErrorView-->
+                                        <div class="alert col-xs-7 col-sm-4 col-sm-offset-1 col-md-5 col-md-offset-4 col-lg-4 text-center" id="validation-error-container"
+                                            role="alert">Выберите даты:</div>
+                                        <!--end of id="validation-error-container"-->
+                                        <div class="col-xs-12 col-sm-7 col-md-9 col-md-offset-2 col-lg-7 col-lg-offset-1" id="datepicker-container">
+                                            <form class="form-horizontal">
+                                                <div class="form-group">
+                                                    <div>
+                                                        <div id="sandbox-container">
+                                                            <div class="input-daterange input-group" id="datepicker">
+                                                                <span class="input-group-addon"><i class="fa fa-calendar fa-lg" aria-hidden="true"></i></span>
+                                                                <input type="text" class="input-sm form-control" name="start">
+                                                                <span class="input-group-addon">по</span>
+                                                                <input type="text" class="input-sm form-control" name="end">
+                                                                <span class="input-group-btn">
                                                             <button class="btn btn-info input-sm chart-period" type="button">OK</button>
                                                             </span>
-                                                        </div><!-- end id="datepicker"-->
-                                                    </div><!--end id="sandbox-container"-->
-                                                </div><!--end after class="form-group"-->
-                                            </div><!--end class="form-group"-->
-                                        </form>
-                                    </div><!--end of datepicker-->
-                                    <div class="col-xs-12">
-                                    	<div id="chart-container"></div><!--end of id="chart-container"-->
-                                	</div> <!--end of class="col-xs-12"-->
-                            </div><!--end of row errorView and datepicker-->
-                            <!-- chartView-->
-                        </div><!-- end of "errorView, datepicker and chartView"-->
-                    </div><!--end of row-->
-                </div><!--end of class="panel-body"-->
-            </div><!--end of class="panel panel-info"-->
-        </div><!--end of panel-->
-    </div><!--end of row-->
-</div><!--end of container-fluid-->
-</main>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-<script src="http://code.highcharts.com/highcharts.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.3.3/backbone-min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js" integrity="sha256-urCxMaTtyuE8UK5XeVYuQbm/MhnXflqZ/B9AOkyTguo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/locales/bootstrap-datepicker.ru.min.js" integrity="sha256-QpL91vvZQ3u/7Tm2AjUOTzuQhCvdQ+kugNHxU0Qenio=" crossorigin="anonymous"></script>
-<script>
-$(document).ready(function() {
-    var deviceWidth = window.innerWidth;
-    if (deviceWidth == 240) {
-        $("div#small-device-nav").removeClass("btn-group-md").addClass("btn-group-sm");
-        $("div#small-device-nav a").addClass("btn-sm");
-    }
-
-    $(window).resize(function() {
-        var deviceWidth = window.innerWidth;
-        if (deviceWidth == 240) {
-            $("div#sandwich-button").css({
-                "padding-left": "55px"
-            });
-            $("div#small-device-nav").removeClass("btn-group-md").addClass("btn-group-sm");
-            $("div#small-device-nav a").addClass("btn-sm").css({
-                "padding-top": "15px"
-            });
-        } else {
-            if (deviceWidth != 240) {
-                $("div#sandwich-button").css({
-                    "padding-left": "0"
-                });
-                $("div#small-device-nav").addClass("btn-group-md").removeClass("btn-group-sm");
-                $("div#small-device-nav a").removeClass("btn-sm");
+                                                            </div>
+                                                            <!-- end id="datepicker"-->
+                                                        </div>
+                                                        <!--end id="sandbox-container"-->
+                                                    </div>
+                                                    <!--end after class="form-group"-->
+                                                </div>
+                                                <!--end class="form-group"-->
+                                            </form>
+                                        </div>
+                                        <!--end of datepicker-->
+                                        <div class="col-xs-12">
+                                            <div id="chart-container"></div>
+                                            <!--end of id="chart-container"-->
+                                        </div>
+                                        <!--end of class="col-xs-12"-->
+                                    </div>
+                                    <!--end of row errorView and datepicker-->
+                                    <!-- chartView-->
+                                </div>
+                                <!-- end of "errorView, datepicker and chartView"-->
+                            </div>
+                            <!--end of row-->
+                        </div>
+                        <!--end of class="panel-body"-->
+                    </div>
+                    <!--end of class="panel panel-info"-->
+                </div>
+                <!--end of panel-->
+            </div>
+            <!--end of row-->
+        </div>
+        <!--end of container-fluid-->
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.3.3/backbone-min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js" integrity="sha256-urCxMaTtyuE8UK5XeVYuQbm/MhnXflqZ/B9AOkyTguo="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/locales/bootstrap-datepicker.ru.min.js" integrity="sha256-QpL91vvZQ3u/7Tm2AjUOTzuQhCvdQ+kugNHxU0Qenio="
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            var deviceWidth = window.innerWidth;
+            if (deviceWidth == 240) {
+                $("div#small-device-nav").removeClass("btn-group-md").addClass("btn-group-sm");
+                $("div#small-device-nav a").addClass("btn-sm");
             }
-        }
-    });
-});
-</script>
-<script src="js/app.js"></script>
-<script src="js/model/model.js"></script>
-<script src="js/views/sidebarView.js"></script>
-<script src="js/views/progressView.js"></script>
-<script src="js/views/chartView.js"></script>
-<script src="js/controller/controller.js"></script>
-<script src="js/router/router.js"></script>
+
+            $(window).resize(function () {
+                var deviceWidth = window.innerWidth;
+                if (deviceWidth == 240) {
+                    $("div#sandwich-button").css({
+                        "padding-left": "55px"
+                    });
+                    $("div#small-device-nav").removeClass("btn-group-md").addClass("btn-group-sm");
+                    $("div#small-device-nav a").addClass("btn-sm").css({
+                        "padding-top": "15px"
+                    });
+                } else {
+                    if (deviceWidth != 240) {
+                        $("div#sandwich-button").css({
+                            "padding-left": "0"
+                        });
+                        $("div#small-device-nav").addClass("btn-group-md").removeClass("btn-group-sm");
+                        $("div#small-device-nav a").removeClass("btn-sm");
+                    }
+                }
+            });
+        });
+    </script>
+    <script src="js/app.js"></script>
+    <script src="js/model/model.js"></script>
+    <script src="js/views/sidebarView.js"></script>
+    <script src="js/views/progressView.js"></script>
+    <script src="js/views/chartView.js"></script>
+    <script src="js/controller/controller.js"></script>
+    <script src="js/router/router.js"></script>
 </body>
+
 </html>
