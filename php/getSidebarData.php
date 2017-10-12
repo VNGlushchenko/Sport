@@ -1,6 +1,10 @@
 <?php
 require_once 'db_connect.php';
-$user_id = ($_POST['userName']=="Kate") ? 1 : 2;
+require_once 'prepareRequestData.php';
+
+$user_name = str_replace(array('\n','\r\n'), '', $_POST['userName']);
+$user_id = (sanitizeMySQL($con,$user_name) == "Kate") ? 1 : 2;
+
 $query = "
           select distinct
                  t1.parameter_name,
@@ -9,6 +13,7 @@ $query = "
             join body_parameters_values as t2 on t2.parameter_id = t1.parameter_id
                                              and t2.user_id = ".$user_id.
          " order by t1.parameter_id";
+         
 $result=mysqli_query($con,$query);
 $parameter_name = array();
 $parameter_li = array();
